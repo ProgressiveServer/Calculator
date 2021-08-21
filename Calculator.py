@@ -106,10 +106,10 @@ def on_user_info(server, info):
 
 def on_load(server, old):
 	if simpleeval:
-		server.logger.info('检测到 simpleeval 模块，开启高级计算模式')
+		server.logger.info('The simpleeval module is detected and advanced calculation mode is enabled')
 	else:
-		server.logger.info('未检测到 simpleeval 模块，使用简易模式')
-	server.register_help_message('==<exp>', '计算表达式§7<exp>§r')
+		server.logger.info('simpleeval module not detected, use simple mode')
+	server.register_help_message('==<exp>', 'Calculate expression§7<exp>§r')
 
 
 if __name__ == '__main__':
